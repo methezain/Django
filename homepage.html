@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        my site project
+        {% endblock %}
+        </title>
+</head>
+
+<body>
+    
+    <header>
+        {% block content %}{% endblock %} 
+        {% block heading %}
+        <h1>Welcome to Our Services</h1>
+        {% endblock %}
+       
+        
+    </header>
+    <main>
+        <div>
+            <section class="section">
+                <h2>Machine Learning</h2>
+                <img src="static/images/img1.jpg" alt="machine-learning">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium veritatis voluptatibus culpa
+                    omnis voluptas harum nostrum vitae obcaecati quod pariatur nesciunt aut mollitia, quo eos?</p>
+            </section>
+
+            <section class="section">
+                <h2>Data Science</h2>
+                <img src="static/images/img2.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, molestiae magnam minima id hic
+                    repudiandae magni fuga aspernatur fugit soluta quis, distinctio consequatur doloribus aperiam!</p>
+            </section>
+
+            <section class="section">
+                <h2>Deployment</h2>
+                <img src="static/images/img4.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat numquam amet eos commodi perferendis
+                    aliquam natus magni necessitatibus quidem, reiciendis cupiditate? Nihil tempora.</p>
+            </section>
+
+            <section class="section">
+                <h2>Web Development</h2>
+                <img src="static/images/img3.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. accusamus Sapiente eveniet quis a quae
+                    quibusdam, labore laborum! Quia culpa similique eligendi. Quam distinctio optio error accusamus!</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>2024 Services Website. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

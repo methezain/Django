@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% block name %} 
+    <nav>
+        <ul>
+            <li><a href="#machine-learning">Machine Learning</a></li>
+            <li><a href="#ai">AI</a></li>
+            <li><a href="#data-science">Data Science</a></li>
+            <li><a href="#web-development">Web Development</a></li>
+            <li><a href="#deployment">Deployment</a></li>
+        </ul>
+    </nav>
+    {% endblock %} 
+
+    {% block heading %}{% endblock %}
+</body>
